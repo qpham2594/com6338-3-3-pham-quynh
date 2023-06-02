@@ -22,6 +22,10 @@ var questionsArr = [
     {
         question: 'You can modify an array after it is created',
         answer: true
+    },
+    {
+        question: 'Hoisting is not something Javascript automatically does',
+        answer: false
     }
     ]
 
@@ -31,7 +35,7 @@ var correctAns = 0
 
     console.log ('started quiz')
     for ( let i = 0; i < questionsArr.length; i++) {
-     userResponse = confirm(questionsArr)
+     correctAns = confirm(questionsArr)
 
         var questions = questionsArr[i];
         console.log(questionsArr)
@@ -40,7 +44,7 @@ var correctAns = 0
             correctAns++
 
 
-        var quizScore = Math.round (correctAns/questionsArr.length * 100 )
+        var quizScore = Math.round ( correctAns/questionsArr.length * 100 )
         alert ('Your score is ' + quizScore + '%')
         }
         
