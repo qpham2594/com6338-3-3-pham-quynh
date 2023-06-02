@@ -35,7 +35,7 @@ var correctAns = 0
 
     console.log ('started quiz')
     for ( let i = 0; i < questionsArr.length; i++) {
-     correctAns = confirm(questionsArr)
+     userResponse = confirm(questionsArr)
 
         var questions = questionsArr[i];
         console.log(questionsArr)
