@@ -24,28 +24,46 @@ var questionsArr = [
     }
     ]
 
-// objects, 5, 
+    // var questionsArr = [
+        
+    //         'An object includes a variables and function',
+    //         'There are for loops, while loops, and do...while loops',
+    //         'For loops are the most commonly used',
+    //         'If a variable is part of an object, it is called a property',
+    //         'You can modify an array after it is created',
+     
+    //     ]
 
 
 
-
-var correctAns = 0
-var totalQuest = 0
 
 function runQuiz() {
+//    var correctAns = 0
+//     var totalQuest = 0
+//     var finalScore = 0
+    // var userResponse = true
+
     console.log ('started quiz')
-    for ( var i = 0; i < questionsArr.length; i++) {
-       // correctAns += questionsArr[i][1]
-        //var score = (correctAns/questionsArr.length)
-        // alert ('Your score is' + score)
+    for ( let i = 0; i < questionsArr.length; i++) {
+    // userResponse = confirm(questionsArr)
+    //    correctAns += questionsArr[i][1]
+    //     var score = (correctAns/questionsArr.length)
+    //     alert ('Your score is' + score)
+
         var questions = questionsArr[i];
-        console.log(questions)
+        console.log(questionsArr[0])
         var answer = confirm (questions);
-        if (answer) {
+        if (answer === true) {
             correctAns++
         }
         
     }
+//    finalScore = Math.round((correctAns/totalQuest)*100)
+//    alert ("Final Score: " + finalScore + "%")
+
+    // if (correctAns >= Math.round (answer/questionsArr.length)) (
+    //     alert ('Your score is ' + correctAns)
+    // )
     
     
     
