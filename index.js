@@ -24,8 +24,8 @@ var questionsArr = [
         answer: true
     },
     {
-        question: 'Hoisting is something Javascript automatically does',
-        answer: true
+        question: 'Hoisting is not something Javascript automatically does',
+        answer: false
     },
     ]
 
@@ -40,15 +40,9 @@ var correctAns = 0
         var questions = questionsArr[i];
         console.log(questionsArr)
         var answer = confirm (questions.question);
-        // if ()
 
-
-
-        if (answer === true) {
+        if (answer === questions.answer) {
             correctAns++
-        }
-        else {
-
         }
         
     }
