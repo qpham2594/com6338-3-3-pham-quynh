@@ -24,9 +24,9 @@ var questionsArr = [
         answer: true
     },
     {
-        question: 'Hoisting is not something Javascript automatically does',
-        answer: false
-    }
+        question: 'Hoisting is something Javascript automatically does',
+        answer: true
+    },
     ]
 
 
@@ -35,21 +35,27 @@ var correctAns = 0
 
     console.log ('started quiz')
     for ( let i = 0; i < questionsArr.length; i++) {
-     userResponse = confirm(questionsArr)
+    //  userResponse = confirm(questionsArr.answer)
 
         var questions = questionsArr[i];
         console.log(questionsArr)
-        var answer = confirm (questions);
+        var answer = confirm (questions.question);
+        // if ()
+
+
+
         if (answer === true) {
             correctAns++
+        }
+        else {
 
-
-        var quizScore = Math.round ( correctAns/questionsArr.length * 100 )
-        alert ('Your score is ' + quizScore + '%')
         }
         
     }
-    
+    var quizScore = Math.round(correctAns/questionsArr.length * 100) 
+    console.log(quizScore)
+    alert ('Your score is ' + quizScore + '%')
     
 }
+
 
